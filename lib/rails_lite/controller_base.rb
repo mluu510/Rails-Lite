@@ -13,6 +13,8 @@ class ControllerBase
     @req = req
     @res = res
 
+    @params = Params.new(req, route_params)
+
   end
 
   # populate the response with content
